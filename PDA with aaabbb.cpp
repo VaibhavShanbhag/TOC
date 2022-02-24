@@ -13,28 +13,28 @@ class Stack
 	{
 		top = -1;
 	}
-void push(char x)
-{
-	a[++top] = x;
-}
-void pop()
-{
-	--top;
-}
-char peek()
-{
-	char x = a[top];
-	return x;
-}
-bool isEmpty()
-{
-	return (top < 0);
-}
-void display()
-{
-	for (int s = top; s >= 0; s--)
-	cout << a[s];
-}
+	void push(char x)
+	{
+		a[++top] = x;
+	}
+	void pop()
+	{
+		--top;
+	}
+	char peek()
+	{
+		char x = a[top];
+		return x;
+	}
+	bool isEmpty()
+	{
+		return (top < 0);
+	}
+	void display()
+	{
+		for (int s = top; s >= 0; s--)
+		cout << a[s];
+	}
 };
 void displaytransition(string state, Stack stack, char str[], int t, int l)
 {
@@ -54,7 +54,6 @@ int main()
 	state current_state = q0;
 	char str[10];
 	class Stack stack;
-	//clrscr();
 	cout << "Enter the string: ";
 	cin >> str;
 	len = strlen(str);
